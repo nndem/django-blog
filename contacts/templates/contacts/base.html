@@ -3,27 +3,32 @@
     <head>
 
     	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    	<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    	<link rel="stylesheet" href="{% static 'CSS/blog.css' %}">
-    	
+
+    	<!-- <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css"> -->
+
+    	<!-- <link rel="stylesheet" href="{% static 'CSS/blog.css' %}"> -->
         <link rel="stylesheet" href="{% static 'CSS/nav.css' %}">
+
 
         <div class="topnav">
           <a class="active" href="/">Home</a>
           <a href="/blog">Blog</a>
           <a href="/contacts">Contact</a>
         </div> 
-        <title>Posts</title>
+
+        <title>Title</title>
     </head>
+
+
     <body>
-    <div class="page-header">
-        <h1><a href="/">Blog</a></h1>
-    </div>
+    <!-- <div class="page-header">
+        <h1><a href="/">PageName</a></h1>
+    </div> -->
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
             {% block content %}
-            {% endblock %}
+            {% endblock content%}
             </div>
         </div>
     </div>
